@@ -14,5 +14,6 @@ namespace DAL
                 
         }
         public virtual DbSet<Usuarios> Usuario { get; set; }
+        public virtual DbSet<Peliculas> Pelicula { get; set; }
     }
 }

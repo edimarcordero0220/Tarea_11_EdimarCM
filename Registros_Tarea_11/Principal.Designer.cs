@@ -70,6 +70,7 @@
             this.peliculasToolStripMenuItem.Name = "peliculasToolStripMenuItem";
             this.peliculasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.peliculasToolStripMenuItem.Text = "Peliculas";
+            this.peliculasToolStripMenuItem.Click += new System.EventHandler(this.peliculasToolStripMenuItem_Click);
             // 
             // categoriasToolStripMenuItem
             // 

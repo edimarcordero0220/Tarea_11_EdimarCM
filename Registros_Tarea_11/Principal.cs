@@ -19,7 +19,14 @@ namespace Registros_Tarea_11
 
         private void categoriToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Usuarios u = new Usuarios();
+            RegistroUsuarios u = new RegistroUsuarios();
+
+            u.Show();
+        }
+
+        private void peliculasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroPelicula u = new RegistroPelicula();
 
             u.Show();
         }

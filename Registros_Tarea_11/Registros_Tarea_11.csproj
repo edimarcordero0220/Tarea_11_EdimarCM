@@ -76,12 +76,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registros\Usuarios.cs">
+    <Compile Include="Registros\RegistroPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registros\Usuarios.Designer.cs">
-      <DependentUpon>Usuarios.cs</DependentUpon>
+    <Compile Include="Registros\RegistroPelicula.Designer.cs">
+      <DependentUpon>RegistroPelicula.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registros\RegistroUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistroUsuarios.Designer.cs">
+      <DependentUpon>RegistroUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilidades.cs" />
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,8 +101,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Registros\Usuarios.resx">
-      <DependentUpon>Usuarios.cs</DependentUpon>
+    <EmbeddedResource Include="Registros\RegistroPelicula.resx">
+      <DependentUpon>RegistroPelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\RegistroUsuarios.resx">
+      <DependentUpon>RegistroUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
@@ -134,6 +144,16 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{1d87ba88-27f0-4761-bd6c-b318401b4b40}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{b1f143cf-cabe-4f05-9be3-ec285e761f8f}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
