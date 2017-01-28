@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Registros_Tarea_11.Registros;
+using Registros_Tarea_11.Consultas;
 
 namespace Registros_Tarea_11
 {
@@ -26,8 +27,14 @@ namespace Registros_Tarea_11
 
         private void peliculasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RegistroPelicula u = new RegistroPelicula();
+            RegistroPeliculas u = new RegistroPeliculas();
 
+            u.Show();
+        }
+
+        private void peliculasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ConsultarUsuario u = new ConsultarUsuario();
             u.Show();
         }
     }

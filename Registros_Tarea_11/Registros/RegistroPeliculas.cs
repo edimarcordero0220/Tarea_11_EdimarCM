@@ -11,16 +11,16 @@ using BLL;
 
 namespace Registros_Tarea_11.Registros
 {
-    public partial class RegistroPelicula : Form
+    public partial class RegistroPeliculas : Form
     {
-        public RegistroPelicula()
+        public RegistroPeliculas()
         {
             InitializeComponent();
         }
         Utilidades ut = new Utilidades();
         private void LlenarClase(Peliculas p)
         {
-            p.Descripcion = DecripciontextBox.Text;
+            p.Descripcion = DescripciontextBox.Text;
             p.Estreno = EstrenodateTimePicker.Value;
         }
 
@@ -46,10 +46,8 @@ namespace Registros_Tarea_11.Registros
         private void LlenarPeliculas(Peliculas peli)
         {
             IdtextBox.Text = peli.IdPelicula.ToString();
-            DecripciontextBox.Text = peli.Descripcion;
+            DescripciontextBox.Text = peli.Descripcion;
             EstrenodateTimePicker.Value = peli.Estreno;
-            
-
         }
         public void BuscarUsuario(Peliculas pelicula)
         {
@@ -61,7 +59,7 @@ namespace Registros_Tarea_11.Registros
             {
 
                 IdtextBox.Text = pelicula.IdPelicula.ToString();
-                DecripciontextBox.Text = pelicula.Descripcion.ToString();
+                DescripciontextBox.Text = pelicula.Descripcion.ToString();
             }
         }
         private bool ValidarBuscar()
@@ -81,9 +79,7 @@ namespace Registros_Tarea_11.Registros
         private void Nuevobutton_Click(object sender, EventArgs e)
         {
             IdtextBox.Text = "";
-            DecripciontextBox.Text = "";
-            
-
+            DescripciontextBox.Text = "";
         }
     }
 }
