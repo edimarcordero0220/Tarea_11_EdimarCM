@@ -6,14 +6,22 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Registros_Tarea_11.Registros;
 
 namespace Registros_Tarea_11
 {
-    public partial class Form1 : Form
+    public partial class Principal : Form
     {
-        public Form1()
+        public Principal()
         {
             InitializeComponent();
+        }
+
+        private void categoriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Usuarios u = new Usuarios();
+
+            u.Show();
         }
     }
 }
