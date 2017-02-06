@@ -28,6 +28,7 @@ namespace Registros_Tarea_11.Registros
         {
             Peliculas peli = new Peliculas();
             LlenarClase(peli);
+            //no
             PeliculasBLL.Insertar(peli);
             MessageBox.Show("Registro Exitoso!!!");
 
@@ -35,6 +36,7 @@ namespace Registros_Tarea_11.Registros
 
         private void Buscarbutton_Click(object sender, EventArgs e)
         {
+            //mal
             BuscarUsuario(PeliculasBLL.Buscar(String(IdtextBox.Text)));
         }
         public int String(string texto)
@@ -80,6 +82,11 @@ namespace Registros_Tarea_11.Registros
         {
             IdtextBox.Text = "";
             DescripciontextBox.Text = "";
+        }
+
+        private void RegistroPeliculas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

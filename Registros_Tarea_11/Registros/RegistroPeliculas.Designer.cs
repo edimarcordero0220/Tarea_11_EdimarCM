@@ -164,6 +164,7 @@
             this.Controls.Add(this.Guardarbutton);
             this.Name = "RegistroPeliculas";
             this.Text = "RegistroPeliculas";
+            this.Load += new System.EventHandler(this.RegistroPeliculas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

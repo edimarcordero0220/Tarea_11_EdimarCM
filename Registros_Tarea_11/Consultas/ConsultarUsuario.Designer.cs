@@ -75,7 +75,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(293, 88);
+            this.label2.Location = new System.Drawing.Point(238, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 3;
@@ -109,16 +109,18 @@
             // 
             // DesdedateTimePicker
             // 
+            this.DesdedateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DesdedateTimePicker.Location = new System.Drawing.Point(127, 81);
             this.DesdedateTimePicker.Name = "DesdedateTimePicker";
-            this.DesdedateTimePicker.Size = new System.Drawing.Size(152, 20);
+            this.DesdedateTimePicker.Size = new System.Drawing.Size(88, 20);
             this.DesdedateTimePicker.TabIndex = 7;
             // 
             // HastadateTimePicker
             // 
-            this.HastadateTimePicker.Location = new System.Drawing.Point(334, 81);
+            this.HastadateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.HastadateTimePicker.Location = new System.Drawing.Point(279, 80);
             this.HastadateTimePicker.Name = "HastadateTimePicker";
-            this.HastadateTimePicker.Size = new System.Drawing.Size(152, 20);
+            this.HastadateTimePicker.Size = new System.Drawing.Size(78, 20);
             this.HastadateTimePicker.TabIndex = 8;
             // 
             // BuscartextBox
